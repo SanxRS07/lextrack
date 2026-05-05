@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Assistant</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="chat-box">
+    <h2>LexTrack AI 🤖</h2>
+
+    <form method="POST">
+        <input type="text" name="query" placeholder="Ask a legal question..." required>
+        <button type="submit">Ask</button>
+    </form>
+
+    {% if response %}
+    <div class="response">
+        <p>{{ response }}</p>
+    </div>
+    {% endif %}
+
+    <br>
+    <a href="/dashboard">Back</a>
+</div>
+
+</body>
+</html>

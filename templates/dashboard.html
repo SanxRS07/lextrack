@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+
+<div class="dashboard">
+    <h1>Welcome, {{ username }} 👋</h1>
+
+    <div class="card">
+        <a href="/add_case"><button>➕ Add Case</button></a>
+    </div>
+
+    <div class="card">
+        <a href="/view_cases"><button>📄 View My Cases</button></a>
+    </div>
+
+    <div class="card">
+        <a href="/chat"><button>🤖 AI Assistant</button></a>
+    </div>
+
+    <div class="card">
+        <a href="/logout"><button>🚪 Logout</button></a>
+    </div>
+</div>
+
+</body>
+</html>

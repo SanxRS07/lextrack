@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Cases</title>
+</head>
+<body>
+
+    <h2>My Cases</h2>
+
+    <table border="1">
+        <tr>
+            <th>Case Number</th>
+            <th>Court</th>
+            <th>Status</th>
+            <th>Next Hearing</th>
+        </tr>
+
+        {% for case in cases %}
+        <tr>
+            <td>{{ case[2] }}</td>
+            <td>{{ case[3] }}</td>
+            <td>{{ case[4] }}</td>
+            <td>{{ case[5] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <a href="/dashboard">Back to Dashboard</a>
+
+</body>
+</html>
